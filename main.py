@@ -133,12 +133,13 @@ while wrong < MAX_WRONG and so_far != word:
 
     # Getting the player's guess
     guess = input("\n\nEnter your guess: ")
+    guess = guess.upper()
     
     while guess in used:
         print("You've already guessed the letter", guess)
         guess = input("\n\nEnter your guess: ")
-        
-    guess = guess.upper
+        guess = guess.upper
+    
     used.append(guess)
 
     # Checking the guess
