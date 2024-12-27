@@ -138,7 +138,7 @@ while wrong < MAX_WRONG and so_far != word:
     while guess in used:
         print("You've already guessed the letter", guess)
         guess = input("\n\nEnter your guess: ")
-        guess = guess.upper
+        guess = guess.upper()
     
     used.append(guess)
 
